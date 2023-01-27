@@ -1,0 +1,39 @@
+.week-weather {
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    align-items: center;
+}
+.one-of-week {
+    width: 13%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+}
+.differ-size {
+    background-color: rgb(209, 248, 209);
+    border-top: 1px solid rgb(114, 235, 114);
+    border-bottom: 1px solid rgb(114, 235, 114);
+}
+.temperature {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    text-align: center;
+}
+.wind-title {
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    width:200px;
+}
+.one-of-week .wind {
+    margin-top: 120px;
+}
+.week-date {
+    color: rgb(49, 49, 177);
+    font-weight: 700;
+    margin-bottom: 25px;
+}

@@ -11,7 +11,8 @@ import {
 } from "react-router-dom";
 import { Today } from '../today/today';
 import { Tomorrow } from '../tomorrow/tomorrow';
-import { ThreeDays } from '../3days/3days'
+import { ThreeDays } from '../3days/3days';
+import { Week } from '../week/week';
 
 
 export const Main = () => {
@@ -77,10 +78,10 @@ export const Main = () => {
               <NavLink className={getClassName} id='nav' to="/week" >Прогноз на неделю</NavLink>
             </div>
             <Routes>
-            <Route path='/' element={today} />
+            <Route path='/' element={<Today longitude={coords.longitude} latitude={coords.latitude} options={mainOptions}/>} />
             <Route path='/tomorrow' element={<Tomorrow longitude={coords.longitude} latitude={coords.latitude} options={mainOptions}/>} />
             <Route path='/3days' element={<ThreeDays longitude={coords.longitude} latitude={coords.latitude} options={mainOptions}/>} />
-            {/* <Route path='/week' element={<Teachers/>} /> */}
+            <Route path='/week' element={<Week longitude={coords.longitude} latitude={coords.latitude} options={mainOptions}/>} />
             </Routes>
 
             <div className='cities' >
