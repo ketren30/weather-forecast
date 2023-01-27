@@ -1,0 +1,71 @@
+.back-image {
+    width: 700px;
+    height: 400px;
+    opacity: 0.3;
+    border-radius: 15px;
+    z-index: -1;
+    position: absolute;
+}
+.weather-information {
+    width: 650px;
+    background-color: rgba(240, 248, 255, 0.85);
+    height: 370px;
+    border-radius: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.wrapper {
+    position: relative;
+    margin: 50px, auto;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+    justify-content: stretch;
+}
+.navigation-points, .navigation-points-active {
+    cursor: pointer;
+    background-color: rgb(198, 243, 131);
+    color: rgb(122, 122, 122);
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 0 0 5px 1px rgb(158, 218, 70);
+    content: auto;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navigation-points-active {
+    background-color: rgb(181, 241, 89);
+    box-shadow: 0 0 5px 1px rgb(146, 202, 62);
+}
+#nav:first-child {
+    border-radius: 15px 0 0 0;
+    flex-grow: 1;
+}
+#nav:nth-child(2) {
+    flex-grow: 1;
+}
+#nav:nth-child(3) {
+    flex-grow: 2;
+}
+.navigation :last-child {
+    border-radius: 0 15px 0 0;
+    flex-grow: 2;
+}
+.cities {
+    height: 35px;
+    width: calc(100% - 20px);
+    border-radius: 0 0 15px 15px;
+    background-color: aliceblue;
+    border-top: 1px solid rgb(141, 235, 252);
+    font-weight: 600;
+    color: rgb(49, 49, 177);
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+    padding: 0 10px;
+}
