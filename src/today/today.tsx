@@ -23,8 +23,8 @@ export const Today: React.FC<Props> = ({longitude, latitude, options})=>{
         .then(response => response.json())
         .then(result => setCurrentInfo(result.response[0].periods))
         .catch(error => console.log("error", error));
-    }, []);
-
+    }, [longitude]);
+    
     useEffect(()=>{
         if (currentInfo) {
             if (currentInfo[0].weather=='Clear') setTranslatedDescription('Ясно')
@@ -131,5 +131,5 @@ export const Today: React.FC<Props> = ({longitude, latitude, options})=>{
             
         </div>
     )
-    return <div></div>
+    return <div className='block'></div>
 }

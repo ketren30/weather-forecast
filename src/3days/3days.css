@@ -8,7 +8,6 @@
 .three-days-wrapper .date {
     margin: 5px;
 }
-
 .days {
     width: 32%;
     border: 1px solid rgb(226, 223, 223);
@@ -19,11 +18,13 @@
     display: flex;
     position: relative;
 }
-.part-of-day {
-    width: 25%;
+.parts-of-day div {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.image {
+    width: 40px;
 }
 .temp, .feels-temp {
     width: 40px;
@@ -37,13 +38,6 @@
     line-height: 28px;
     margin:5px;
 }
-.feels-temp {
-    margin: 35px 5px 5px 5px;
-    background-color: rgb(220, 245, 185);
-}
-.image {
-    width: 40px;
-}
 .wind-speed, .feels-like {
     height: 45px;
     width: fit-content;
@@ -51,9 +45,6 @@
     top: 103px;
     left: 10px;
     font-weight: 600;
-}
-.feels-like {
-    top: 170px;
 }
 .wind {
     margin-top: 35px;
@@ -63,4 +54,15 @@
     padding: 5px;
     text-align: center;
 }
+.feels-like {
+    top: 170px;
+}
+.feels-temp {
+    margin: 35px 5px 5px 5px;
+    background-color: rgb(220, 245, 185);
+}
+
+
+
+
 

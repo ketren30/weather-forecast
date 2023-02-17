@@ -69,3 +69,6 @@
     line-height: 35px;
     padding: 0 10px;
 }
+.cursor {
+    cursor: pointer
+}

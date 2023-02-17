@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 .date {
     color: rgb(49, 49, 177);
@@ -16,7 +15,6 @@
     width: 90%;
     display: flex;
 }
-
 .main-info {
     width: 50%;
     height: 130px;
@@ -53,8 +51,6 @@
     font-size: larger;
     text-align: center;
 }
-
-
 .details-wrapper {
     width: 50%;
     margin-left: 15px;
@@ -76,7 +72,6 @@
 .value {
     font-size: medium;
 }
-
 .hour-forecast-wrapper {
     width: 95%;
     display: flex;

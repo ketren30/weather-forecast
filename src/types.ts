@@ -51,3 +51,11 @@ export interface Info {
       'Content-Type'?:string
     }
   }
+  export interface City {
+    region: string,
+    city: string
+  }
+  export interface Coords {
+    lat: number,
+    lon: number
+  }

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './tomorrow.css';
 import { Weather, Options } from '../types';
 
 type Props = {
@@ -36,7 +35,7 @@ export const Tomorrow: React.FC<Props> = ({longitude, latitude, options})=> {
             .then(res => res.json())
             .then(result => setHourWeather(result.response[0].periods))
             .catch(err => console.error('error:' + err));
-    }, [])
+    }, [longitude])
 
     useEffect(()=>{
         if (dayWeather) {
@@ -148,5 +147,5 @@ export const Tomorrow: React.FC<Props> = ({longitude, latitude, options})=> {
             
         </div>
     )
-    return <div></div>
+    return <div className='block'></div>
 }

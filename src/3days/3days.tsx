@@ -23,7 +23,7 @@ export const ThreeDays: React.FC<Props> = ({longitude, latitude, options})=>{
         .then(res => res.json())
         .then(result => setThreeDaysWeather(result.response[0].periods))
         .catch(err => console.error(err))
-    }, []);
+    }, [longitude]);
 
     const getDate = (num: number) => {
         const days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
@@ -81,7 +81,7 @@ export const ThreeDays: React.FC<Props> = ({longitude, latitude, options})=>{
                         {threeDaysWeather.map((elem, index)=>{
                             if (index>=4*i && index<=(4*i+3))
                             return (
-                                <div className='part-of-day'>
+                                <div key={index}>
                                     {getImage(elem.icon)}
                                     {getPartOfDay(index)}
                                     <div className='temp'>{transformTemp(elem.avgTempC)}</div>
@@ -102,5 +102,5 @@ export const ThreeDays: React.FC<Props> = ({longitude, latitude, options})=>{
             })}      
         </div>
     )
-    return <div></div>
+    return <div className='three-days-wrapper'></div>
 }

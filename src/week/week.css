@@ -1,39 +1,62 @@
 .week-weather {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     height: 300px;
     align-items: center;
 }
+.week-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 .one-of-week {
-    width: 13%;
+    width: 14%;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 90%;
 }
-.differ-size {
-    background-color: rgb(209, 248, 209);
-    border-top: 1px solid rgb(114, 235, 114);
-    border-bottom: 1px solid rgb(114, 235, 114);
-}
-.temperature {
-    width: 100%;
-    position: absolute;
-    top: 70px;
-    text-align: center;
-}
-.wind-title {
-    position: absolute;
-    top: 180px;
-    left: 10px;
-    width:200px;
-}
-.one-of-week .wind {
-    margin-top: 120px;
-}
 .week-date {
     color: rgb(49, 49, 177);
     font-weight: 700;
-    margin-bottom: 25px;
+    margin: 6px 0 18px 0;
 }
+.temperature {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+.top-line, .bottom-line {
+    width: 100%;
+    height: 20px;
+}
+.top-line {
+    border-bottom: 1px solid rgb(114, 235, 114);
+}
+.middle {
+    background-color: rgb(209, 248, 209);
+}
+.bottom-line {
+    border-top: 1px solid rgb(114, 235, 114);
+}
+.wind-title {
+    margin: 40px 0 0 10px;
+    width:200px;
+    align-self: flex-start;
+}
+.week-wind {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.week-wind .wind {
+    list-style-type: none;
+    width: 40px;
+    margin: 0;
+}
+
+
